@@ -1,0 +1,115 @@
+*{
+    padding:0
+    margin:0
+}
+body{
+    position: relative;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    margin: 20 auto;
+    height: 20vh;
+    background-color: rgba(29, 207, 243, 0.425);
+
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 46px;
+    background-image: linear-gradient(to bottom right,rgb(226, 70, 200), blue, rgb(255, 0, 255) );
+}
+li{
+    list-style: none;
+}
+.navbar a{
+    color: white;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px
+}
+.navbar a:hover{
+    color: rgb(236, 14, 14);
+}
+
+.container{
+    width: 1400px;
+    margin: auto;
+}
+.nav-bar{
+    width: 1000%;
+    margin: auto;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+.nav-menu{
+float: left;
+}
+.nav-branding{
+    font-size: 2rem;
+}
+.nav-branding{
+    float: left;
+}
+.search-container {
+  float: right;
+
+}
+.search-container input[type=text] {
+    padding: 6px;
+    margin-top: 7px;
+    font-size: 17px;
+    border: none;
+  }
+.search-container button {
+    float: right;
+    padding: 7px 10px;
+    padding-right: 6px;
+    margin-top: 7px;
+    margin-right: 16px;
+    border: none;
+    cursor: pointer;
+  }
+.search-container button:hover {
+    background: #ccc;
+  }
+@media screen and (max-width: 600px) {
+  .search-container {
+    float: none;
+  }
+
+}
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height: 46px;
+   background-color: blue;
+   color: white;
+   text-align: center;
+   opacity: 0.5;
+}
+.about, .donate, .charityform, .home, .search,.contact{
+    margin-top: 44px;
+    margin-bottom: 55px;
+    border: 1px solid black;
+    background: white;
+
+
+}
+@media(max-width:1400px){
+    .container{
+    width: 100%
+    }
+}
+

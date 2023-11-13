@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+<div class="container">
+{% block content %}
+    <style>
+    body {
+      display: flex;
+      align-items: left;
+      justify-content: center;
+      margin: 20 auto;
+      height: 20vh;
+      background-color: rgba(190, 179, 117, 0.425);;
+    }
+  </style>
+<table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Street Name</th>
+                <th>Post Code</th>
+                <th>City Name</th>
+                <th>Phone No</th>
+                <th>Other Info</th>
+            </tr>
+        </thead>
+
+        <tbody>
+        {%for charities in charity%}
+            <tr>
+                <td>{{charities.charity_name}}</td>
+                <td>{{charities.street_name}}</td>
+                <td>{{charities.post_code}}</td>
+                <td>{{charities.district_name}}</td>
+                <td>{{charities.contact_number}}</td>
+                <td>{{charities.extra_info}}</td>
+
+
+            </tr>
+        {%endfor%}
+        </tbody>
+    </table>
+  {% endblock %}
+</div>

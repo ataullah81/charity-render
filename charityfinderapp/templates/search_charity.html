@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+<div class="container">
+    {% block content %}
+
+    <section>
+
+        <div class="container">
+            <div class="search">
+                <!-- {% if searched %} -->
+                 <!-- <h1>You searched for {{ searched }}</h1></br> -->
+
+                {% for charities in charityname %}
+                <h1><strong>{{ charities }}</strong></h1>
+                <ul>
+                <li><strong>Name:</strong> {{ charities.charity_name }}</li>
+                <li><strong>Address:</strong> {{ charities.street_name }}</li>
+                <li><strong>Post Code:</strong> {{ charities.post_code }}</li>
+                <li><strong>City Name:</strong> {{ charities.district_name }}</li>
+                <li><strong>Phone No:</strong> {{ charities.contact_number }}</li>
+                <li><strong>Website:</strong> {{ charities.website }}</li>
+                <li><strong>Opening hours:</strong> {{ charities.open_hours }}</li>
+                <li><strong>Other Info:</strong> {{ charities.extra_info }}</li>
+                </ul>
+                </br>
+                {% empty %}
+                No match found you searched for!!!
+                {% endfor %}
+               <!--  {% else %}
+                {% endif %} -->
+
+                </div>
+            </div>
+
+    </section>
+    <div class="footer">
+        <p style="font-family:'Lucida Handwriting'">© 2022 ARB Creation </p>
+    </div>
+    {% endblock %}
+ </div>
+
+
