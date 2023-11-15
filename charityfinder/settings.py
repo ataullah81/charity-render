@@ -23,7 +23,7 @@ SECRET_KEY = 'django-insecure-00r$v8#ipzf3nc^)!bn)dqwu0zbgozo7c!^_l1z*t2s0xsrdo(
 #SECRET_KEY = env('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 
 ALLOWED_HOSTS = ['*']
@@ -122,7 +122,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
 STATIC_URL = 'static/'
-#STATIC_URL = '/static/' STATICFILES_STORAGE='django.contrib.staticfiles.storage.ManifestStaticFilesStorage'
+
 
 
 # Default primary key field type
